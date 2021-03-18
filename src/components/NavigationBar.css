@@ -1,0 +1,88 @@
+@media screen and (max-width: 1199px) {
+  .navigation {
+    margin: auto;
+    background-color:black;
+    padding-right:20px;
+    color: #ffffff;
+  }
+
+  .navIcon {
+    margin: auto;
+    width: 150px;
+    height: auto;
+  }
+
+  .login_button {
+    margin:10px;
+    color: #ffffff !important;
+    border-color:#f1e9ea;
+  }
+
+  .create_button {
+    height:50px;
+    border-radius: 3px;
+    color: #ffffff !important;
+    border-color:#f1e9ea;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navigation {
+    margin: auto;
+    background-color:black;
+    padding: 0px 20px;
+    color: #ffffff;
+  }
+
+  .navIcon {
+    margin: auto;
+    width: 200px;
+    height: auto;
+  }
+
+  .login_button {
+    margin:5px;
+    color: #ffffff !important;
+    border-color:#f1e9ea;
+  }
+
+  .login_button:hover {
+    border-radius: 3px;
+    background-color: rgb(158, 152, 152);
+    cursor: pointer;
+  }
+
+  .create_button {
+    height:50px;
+    border-radius: 3px;
+    background-color: black;
+    border-color:#f1e9ea;
+    color: #ffffff !important;
+  }
+
+  .create_button:hover {
+    background-color:rgb(158, 152, 152);;
+  }
+  .add_restaurant_button_nav {
+    background-color: black;
+    border-color:#f1e9ea;
+    width: 80%;
+  }
+  .add_restaurant_text_nav {
+    position: relative;
+    text-align: center;
+    margin-right: 50px;
+    font-size: 18px;
+    top: 4%;
+    color: white;
+  }
+    .brand_new{
+      font-size: 25px;
+      padding : 0px;
+      background : none;
+      border:none;
+      color: #ffffff
+
+    }
+  
+}

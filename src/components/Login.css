@@ -1,0 +1,31 @@
+.login {
+    margin: 100px auto;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.registration_text {
+    padding: 5px;
+    font-size: 20px;
+}
+
+.login_field {
+    padding: 25px;
+}
+
+.signin_button {
+    background-color: black;
+    border-color: white;
+    padding: 10px 30px;
+    font-size: 20px;
+    width: 100%;
+}
+
+.signin_button:hover{
+    border-color: white;
+    background-color: rgb(158, 150, 150);
+}
+
+.terms_a{
+    color: #cb202d !important;
+}

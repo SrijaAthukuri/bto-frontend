@@ -1,0 +1,330 @@
+#background {
+  background-color: #f2f4f5;
+}
+
+.links {
+  text-decoration: none !important;
+}
+
+.cols {
+  padding: 15px;
+}
+
+.cards {
+  padding: 15px;
+}
+
+.card_footer {
+  background-color: #f2f4f5;
+}
+
+.order_button {
+  float: right;
+}
+
+.post_image {
+  border-radius: 10%;
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+}
+
+.add_restaurant {
+  position: relative;
+  height: 70px;
+  background-color:black;
+}
+
+.add_restaurant_text {
+  position: absolute;
+  font-size: 2em;
+  top: 15%;
+  left: 5%;
+  color: white;
+}
+
+.restaurant_button {
+  position: absolute;
+  top: 25%;
+  right: 5%;
+}
+.rcw-conversation-container > .rcw-header {
+  background-color:yellow;
+}
+
+.rcw-response > .rcw-message-text{
+  background-color: black !important;
+  color:white;
+}
+
+.rcw-client > .rcw-message-text {
+  background-color: #d7d0c8 !important;
+  color: #650011;
+}
+
+.rcw-header{
+  background-color: black !important;
+}
+
+.rcw-close-button
+{
+  background-color: black !important;
+}
+.all-cards-container {
+  min-height: calc(100vh - 171px);
+}
+
+@media screen and (max-width: 1199px) {
+  .post {
+    cursor: pointer;
+  }
+
+  .post_data {
+    margin: auto;
+    padding: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .post_title {
+    text-decoration: none !important;
+    margin: auto;
+    top: 160px;
+    font-size: 20px;
+    font-weight: bold;
+    color:black;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .post_type {
+    margin: auto;
+    top: 190px;
+    color: #080808;
+    font-size: 15px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .post_cost {
+    margin: auto;
+    top: 210px;
+    color: #89959b;
+    font-size: 15px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .post_time {
+    margin: auto;
+    color: black;
+    font-size: 15px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .post_payment {
+    text-decoration: none !important;
+    margin: auto;
+    font-size: 15px;
+    color: black;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .post_rating {
+    display: flex;
+    margin: 10px 0px;
+    background-color: #3f7e00;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 100%;
+    color: #ffffff;
+    justify-content: center;
+  }
+
+  .post_views {
+    margin: auto;
+    position: absolute;
+    bottom: 25px;
+    font-size: 15px;
+    color: #89959b;
+  }
+
+  .post_reviews {
+    margin: auto;
+    position: absolute;
+    bottom: 5px;
+    font-size: 15px;
+    color: #89959b;
+  }
+  
+
+  .add_restaurant {
+    height: 100px;
+    background-color: black;
+  }
+
+  .add_restaurant_text {
+    position: relative;
+    text-align: center;
+    margin-right: 50px;
+    font-size: 18px;
+    top: 10%;
+    color: white;
+  }
+
+  .restaurant_button {
+    position: absolute;
+    margin-top: 50px;
+    top: 0%;
+    left: 5%;
+  }
+
+  .add_restaurant_button {
+    background-color: black;
+    border-color:  black;
+    width: 100%;
+  }
+
+  .add_restaurant_button:hover {
+    background-color: #d94148;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .post {
+    position: relative;
+    cursor: pointer;
+  }
+
+  .post_data {
+    margin: auto;
+    padding: 10px;
+
+  }
+
+  .post_title {
+    text-decoration: none !important;
+    margin: auto;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+  }
+
+  .post_type {
+    margin: auto;
+    color: #080808;
+    font-size: 20px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .post_cost {
+    margin: auto;
+    color: #89959b;
+    font-size: 15px;
+  }
+
+  .post_time {
+    color: black;
+    margin: auto;
+    font-size: 15px;
+  }
+
+  .post_payment {
+    color: black;
+    margin: auto;
+    font-size: 15px;
+  }
+
+  .post_rating {
+    position: absolute;
+    text-align: center;
+    min-width: 50px;
+    top: 10px;
+    right: 10px;
+    background-color: #3f7e00;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #ffffff;
+  }
+
+  .post_views {
+    position: absolute;
+    top: 105px;
+    right: 10px;
+    font-size: 20px;
+    color: black;
+  }
+
+  .post_name {
+    font-style: italic;
+    position: absolute;
+    top: 110px;
+    left: 10px;
+    font-size: 20px;
+   
+  }
+  .post_reviews {
+    position: absolute;
+    top: 130px;
+    right: 10px;
+    font-size: 20px;
+    color:#a1902b;
+  }
+  .deleteque
+  {
+    position: absolute;
+    top: 10px;
+    width: auto;
+    right:20px;
+    text-align: center;
+
+  }
+
+  .add_restaurant {
+    position: relative;
+    height: 100px;
+    background-color:  black;
+  }
+
+  .add_restaurant_text {
+    position: absolute;
+    font-size: 2em;
+    top: 30%;
+    left: 5%;
+    color: white;
+  }
+
+  .restaurant_button {
+    position: absolute;
+    top: 22%;
+    right: 5%;
+  }
+
+  .widg
+  {
+    color: black;
+  }
+
+  .add_restaurant_button {
+    background-color:  black;
+    border-color: #f7eff0;
+    font-size: 25px;
+    padding: 10px;
+    margin-right:50px;
+  }
+
+  .add_restaurant_button:hover {
+    background-color: #a1767d;
+  }
+}
