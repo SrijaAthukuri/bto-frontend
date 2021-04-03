@@ -31,22 +31,25 @@ class PostCard extends Component {
         <div className="card cards">
           <Link
             className="links"
-            to={`/questions/${this.props.data.id}/comments`}
+            to={`/posts/${this.props.data.id}/comments`}
           >
             <div className="post">
             
-              <div className="post_data ">
-                <p className="post_type">{this.props.data.description}</p>
-              </div>
-            
-              <div>
-            
-                {/* <p className="post_views">{this.props.data.views} views</p> */}
-                <p className="post_views">{this.props.data.comments} comments</p>
-                <p className="post_reviews">posted by {this.props.data.name}</p>
-              </div>
+            <div className="post_data ">
+              <p className="post_title">{this.props.data.description}</p>
+              <p className="post_type"> &nbsp;</p>
+              <p className="post_type">&nbsp;   </p>
+            </div>
+          
+            <div>
+          
+              {/* <p className="post_views">{this.props.data.views} views</p> */}
+              <p className="post_views">{this.props.data.comments} comments</p>
+              <p className="post_reviews">posted by {this.props.data.postedby}</p>
               <br></br>
             </div>
+            <br></br>
+          </div>
           </Link>
        
           

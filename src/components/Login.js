@@ -64,7 +64,7 @@ class Login extends Component {
             
           this.setState({
             loading: false,
-            message: error.response.data
+            //message: error.response.data
           });
         }
       );
@@ -74,7 +74,7 @@ class Login extends Component {
       });
     }
   }
-
+  
   render() {
     return (
       <div>

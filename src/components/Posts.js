@@ -11,7 +11,7 @@ class Posts extends Component {
   constructor(props) {
     super(props);
     console.log(this.props)
-    this.state = { questions: [] };
+    this.state = { posts: [] };
   }
 
   componentDidMount() {
@@ -28,19 +28,7 @@ class Posts extends Component {
       this.setState((this.state.posts = this.state.posts));
     });
   }
-  handleNewUserMessage(message) {
-    //console.log(message)
-    axios.get(`http://127.0.0.1:5000/chat/${message}`
-    ).then((response) => {
-      console.log(response)
-      if (response.status === 200) {
-       
-          addResponseMessage(response.data);
-        
-      }
 
-    })
-  }
 
   render() {
     return (
@@ -50,7 +38,7 @@ class Posts extends Component {
         <div className="py-5 all-cards-container">
           <div className="container" id="background">
             <div className="row hidden-sm-up">
-              {this.state.questions.map(item => (
+              {this.state.posts.map(item => (
                 <PostCard data={item} />
               ))}
             </div>
@@ -62,11 +50,7 @@ class Posts extends Component {
           </p>
           <div className="restaurant_button">
             
-            <Widget
-            
-         handleNewUserMessage={this.handleNewUserMessage}
-          //title=""
-          subtitle="Feel free to ask your enquires!!!" /> 
+           
           </div>
         </div>
       </div>

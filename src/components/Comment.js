@@ -15,7 +15,7 @@ class Comment extends Component {
   }
 
   componentDidMount() {
-    
+    console.log(this.props.match.params.postId)
     const user = AuthService.getCurrentUser();
     //console.log(user)
     if(user)

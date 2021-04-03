@@ -3,24 +3,37 @@ import axios from 'axios';
 import PostCard from "./PostCard";
 import NavigationBar from './Navigationbar';
 import "./Request.css"
+import AuthService from "../services/auth.service";
+
 let baseUrl = "http://localhost:4000";
 
 
 class Request extends  React.Component {
   constructor(props){
     super(props);
-    this.state = { questions: [],res:''}
+    this.state = { currentUser : undefined, workstation:undefined};
     this.handleSubmit = this.handleSubmit.bind(this);
   }
+  componentDidMount(){
+    const user = AuthService.getCurrentUser();
+    //console.log(user)
+    if(user)
+    {
+      this.setState({
+      currentUser:user,
+      workstation:user.user.workstation
+      });
+    }
+   }
 handleSubmit(e)
 {
   console.log(this.state.res)
   e.preventDefault();
-  axios.get(`${baseUrl}/search/${e.target.title.value}`).then(res => {
-    res.data.map(item => {
-      return this.state.questions.push(item);
-    });
-    this.setState((this.state.questions = this.state.questions));
+  axios.post(`${baseUrl}/request/${e.target.title.value}/${this.state.workstation}`).then(res => {
+    if(res.status==200)
+    {
+      alert("Request Raised")
+    }
     
   });
 }
@@ -61,9 +74,7 @@ handleChange = event => {
           </div>
           
         </div>
-        {this.state.questions.map(item => (
-                <PostCard data={item} />
-              ))}
+        
        </form>
       </div>
 

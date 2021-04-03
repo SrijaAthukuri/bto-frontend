@@ -32,7 +32,7 @@ class AddComment extends Component {
           <h4 align="left">Add your comment</h4>
           <input
             className="form-control"
-            name="answer"
+            name="comment"
             type="text"
             placeholder="Share your comment ..."
             required

@@ -45,11 +45,10 @@ class AddPost extends Component {
     const { currentUser } = this.state;
     event.preventDefault();
     axios
-      .post(`${baseUrl}/que`, {
-        title: event.target.title.value,
+      .post(`${baseUrl}/postexperience`, {
        
         description: event.target.description.value,
-        name: currentUser.user.username
+        name: currentUser.user.name
       })
       .then(res => {
         if (res.status === 200) this.props.history.push("/posts");
@@ -69,14 +68,6 @@ class AddPost extends Component {
           <div className="container content">
             <form onSubmit={this.handleSubmit} method="post">
               <div className="form-group">
-               
-                {/* <input
-                  type="text"
-                  name="que"
-                  className="form-control"
-                  placeholder="Enter the title..."
-                  required
-                /> */}
                
               </div>
               <div className="form-group">

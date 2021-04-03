@@ -37,7 +37,7 @@ class NavigationBar extends Component {
     <div>
      
       <nav className="navbar navbar-expand-sm navbar-dark justify-content-between navigation">
-        <Link to="/">
+        <Link to="/posts">
           <a className="navbar-brand mr-auto" href="/">
             
             <img
@@ -109,7 +109,7 @@ class NavigationBar extends Component {
             </li>
               <li className="nav-item">
                 <Link to={"/questions"} className="nav-link  create-button">
-                  {currentUser.user.username}
+                  {currentUser.user.name}
                 </Link>
               </li>
               <li className="nav-item">
